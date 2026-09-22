@@ -5,162 +5,183 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Termini di Utilizzo — Sbirù</title>
 <style>
-  :root {
-    --bg: #fbf7ee;
-    --card: #ffffff;
-    --ink: #2b2118;
-    --muted: #6b6153;
-    --accent: #e8a324;
-    --accent-dark: #b97d0f;
-    --border: #ecdfc4;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65;
-  }
-  header {
-    background: linear-gradient(135deg, #f6b93b, #e8a324);
-    color: #3a2a06;
-    padding: 28px 20px;
-  }
-  .headwrap {
-    max-width: 780px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .brand {
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-  }
-  nav a {
-    color: #3a2a06;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 18px;
-    font-size: 0.92rem;
-    border-bottom: 2px solid transparent;
-    padding-bottom: 2px;
-  }
-  nav a.active { border-color: #3a2a06; }
-  nav a:hover { border-color: #3a2a06; }
-  main {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 36px 20px 80px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 34px 38px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  }
-  h1 {
-    font-size: 1.7rem;
-    margin: 0 0 4px;
-  }
-  .updated {
-    color: var(--muted);
-    font-size: 0.9rem;
-    margin-bottom: 28px;
-  }
-  h2 {
-    font-size: 1.08rem;
-    margin-top: 34px;
-    margin-bottom: 10px;
-    color: var(--accent-dark);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 6px;
-  }
-  h3 {
-    font-size: 0.98rem;
-    margin-top: 20px;
-    margin-bottom: 6px;
-  }
-  p { margin: 10px 0; color: var(--ink); }
-  ul { margin: 10px 0; padding-left: 22px; }
-  li { margin: 6px 0; }
-  a { color: var(--accent-dark); }
-  footer {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 0 20px 60px;
-    color: var(--muted);
-    font-size: 0.85rem;
-    text-align: center;
-  }
+:root {
+--bg: #fbf7ee;
+--card: #ffffff;
+--ink: #2b2118;
+--muted: #6b6153;
+--accent: #e8a324;
+--accent-dark: #b97d0f;
+--border: #ecdfc4;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+background: var(--bg);
+color: var(--ink);
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+line-height: 1.65;
+}
+header {
+background: linear-gradient(135deg, #f6b93b, #e8a324);
+color: #3a2a06;
+padding: 28px 20px;
+}
+.headwrap {
+max-width: 780px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 12px;
+}
+.brand {
+font-size: 1.4rem;
+font-weight: 800;
+letter-spacing: 0.5px;
+}
+nav a {
+color: #3a2a06;
+text-decoration: none;
+font-weight: 600;
+margin-left: 18px;
+font-size: 0.92rem;
+border-bottom: 2px solid transparent;
+padding-bottom: 2px;
+}
+nav a.active { border-color: #3a2a06; }
+nav a:hover { border-color: #3a2a06; }
+main {
+max-width: 780px;
+margin: 0 auto;
+padding: 36px 20px 80px;
+}
+.card {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 34px 38px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+h1 {
+font-size: 1.7rem;
+margin: 0 0 4px;
+}
+.updated {
+color: var(--muted);
+font-size: 0.9rem;
+margin-bottom: 28px;
+}
+.notice {
+background: #fff6e0;
+border: 1px solid var(--border);
+border-radius: 10px;
+padding: 12px 16px;
+font-size: 0.88rem;
+color: var(--muted);
+margin-bottom: 28px;
+}
+h2 {
+font-size: 1.08rem;
+margin-top: 34px;
+margin-bottom: 10px;
+color: var(--accent-dark);
+border-bottom: 1px solid var(--border);
+padding-bottom: 6px;
+}
+h3 {
+font-size: 0.98rem;
+margin-top: 20px;
+margin-bottom: 6px;
+}
+p { margin: 10px 0; color: var(--ink); }
+ul { margin: 10px 0; padding-left: 22px; }
+li { margin: 6px 0; }
+a { color: var(--accent-dark); }
+footer {
+max-width: 780px;
+margin: 0 auto;
+padding: 0 20px 60px;
+color: var(--muted);
+font-size: 0.85rem;
+text-align: center;
+}
 </style>
 </head>
 <body>
 <header>
-  <div class="headwrap">
-    <div class="brand">Sbirù</div>
-    <nav><a href="privacy.html">Privacy Policy</a><a class="active" href="termini.html">Termini di Utilizzo</a></nav>
-  </div>
+<div class="headwrap">
+<div class="brand">Sbirù</div>
+<nav><a href="privacy.html">Informativa sulla Privacy</a><a class="active" href="termini.html">Termini di Utilizzo</a></nav>
+</div>
 </header>
 <main>
-  <div class="card">
-    <h1>TERMINI E CONDIZIONI DI UTILIZZO DI SBIRÙ</h1>
-    <div class="updated">Ultimo aggiornamento: 17 settembre 2026</div>
-    <h2 id="s1">1. CHI SIAMO E ACCETTAZIONE DEI TERMINI</h2>
-<p>Sbirù (di seguito &quot;l&#x27;App&quot;, &quot;il Servizio&quot;, &quot;noi&quot;) è un&#x27;applicazione web gestita da Kevin come progetto personale.</p>
+<div class="card">
+<h1>TERMINI E CONDIZIONI DI UTILIZZO DI SBIRÙ</h1>
+<div class="updated">Ultimo aggiornamento: 22 settembre 2026</div>
+
+<h2 id="s1">1. CHI SIAMO E ACCETTAZIONE DEI TERMINI</h2>
+<p>Sbirù (di seguito "l'App", "il Servizio", "noi") è un'applicazione web gestita da Kevin come progetto personale.</p>
 <p>Email di contatto: <a href="mailto:sbiru2026@yahoo.com">sbiru2026@yahoo.com</a></p>
-<p>Utilizzando Sbirù accetti integralmente i presenti Termini e Condizioni di Utilizzo (&quot;Termini&quot;) e la nostra Informativa sulla Privacy. Se non accetti questi Termini, ti preghiamo di non utilizzare il Servizio. Se hai un&#x27;età inferiore a 18 anni, puoi utilizzare Sbirù solo con il consenso e sotto la supervisione di un genitore o tutore.</p>
+<p>Utilizzando Sbirù accetti integralmente i presenti Termini e Condizioni di Utilizzo ("Termini") e la nostra Informativa sulla Privacy. Se non accetti questi Termini, ti preghiamo di non utilizzare il Servizio. Se hai un'età inferiore a 18 anni, puoi utilizzare Sbirù solo con il consenso e sotto la supervisione di un genitore o tutore.</p>
 <h2 id="s2">2. DESCRIZIONE DEL SERVIZIO</h2>
-<p>Per utilizzare Sbirù, incluse le funzioni di base, è necessario creare un account gratuito (vedi sezione 4): il Servizio non è utilizzabile senza registrazione. Con l&#x27;account gratuito puoi:</p>
-<ul><li>scansionare il codice a barre (o cercare per nome) prodotti alimentari, cosmetici e per animali domestici, ottenendo un punteggio di salute calcolato in base a ingredienti, valori nutrizionali e, ove disponibili, segnalazioni di richiamo di sicurezza;</li><li>ricevere suggerimenti su prodotti alternativi, anche tramite link di affiliazione a rivenditori terzi come Amazon;</li><li>contribuire alla banca dati caricando informazioni su prodotti non ancora censiti, guadagnando eventuali giorni di prova dell&#x27;abbonamento Sbirù+.</li></ul>
-<p>Un abbonamento facoltativo (&quot;Sbirù+&quot;, vedi sezione 5), i cui prezzi e condizioni saranno definiti e comunicati agli utenti quando disponibili, sblocca funzioni aggiuntive, tra cui:</p>
-<ul><li>creare un profilo personale (&quot;fitness&quot;) e/o profili per i propri animali domestici per ottenere punteggi e avvisi personalizzati, calcolati anche in base al proprio peso attuale e obiettivo;</li><li>scegliere nutrienti specifici da monitorare nei prodotti scansionati.</li></ul>
+<p>Per utilizzare Sbirù, incluse le funzioni di base, è necessario creare un account gratuito (vedi sezione 4): il Servizio non è utilizzabile senza registrazione. Con l'account gratuito puoi:</p>
+<ul><li>scansionare il codice a barre (o cercare per nome) prodotti alimentari, cosmetici e per animali domestici, ottenendo un punteggio di salute calcolato in base a ingredienti, valori nutrizionali e, ove disponibili, segnalazioni di richiamo di sicurezza;</li><li>ricevere suggerimenti su prodotti alternativi, anche tramite link di affiliazione a rivenditori terzi come Amazon;</li><li>contribuire alla banca dati caricando informazioni su prodotti non ancora censiti, guadagnando eventuali giorni di prova dell'abbonamento Sbirù+.</li></ul>
+<p>Un abbonamento facoltativo ("Sbirù+", vedi sezione 5) sblocca funzioni aggiuntive, tra cui:</p>
+<ul><li>creare un profilo personale ("fitness") e/o profili per i propri animali domestici per ottenere punteggi e avvisi personalizzati, calcolati anche in base al proprio peso attuale e obiettivo;</li><li>scegliere nutrienti specifici da monitorare nei prodotti scansionati.</li></ul>
 <p>Il Servizio può essere modificato, ampliato o ridotto nel tempo a nostra discrezione, anche senza preavviso, salvo quanto diversamente previsto da norme inderogabili applicabili.</p>
 <h2 id="s3">3. NON È UN CONSIGLIO MEDICO, VETERINARIO O NUTRIZIONALE</h2>
 <p>I punteggi di salute, gli avvisi su ingredienti e nutrienti, i suggerimenti di prodotti alternativi e le segnalazioni di richiamo forniti da Sbirù hanno finalità puramente informativa e non costituiscono in alcun modo consulenza medica, veterinaria, nutrizionale o dietetica professionale. Tali punteggi si basano su dati di terze parti (ad esempio Open Food Facts, Open Beauty Facts, Open Pet Food Facts, USDA FoodData Central, elenchi pubblici di richiami FDA) che potrebbero essere incompleti, non aggiornati o imprecisi, e su algoritmi automatizzati che non tengono conto della tua situazione clinica individuale o di quella del tuo animale domestico.</p>
 <p>In particolare, le eventuali segnalazioni di corrispondenza con un richiamo di sicurezza sono indicative e potrebbero non riguardare esattamente il lotto o il produttore del prodotto che hai in mano: verifica sempre i dettagli (lotto, produttore, data) prima di trarre conclusioni o di gettare/restituire un prodotto.</p>
 <p>Prima di prendere decisioni relative alla tua salute, alla tua dieta, ad allergie o intolleranze, o alla salute del tuo animale domestico, consulta sempre un medico, un dietista, un nutrizionista o un veterinario qualificato. Non utilizzare Sbirù come unico strumento per decisioni che riguardano condizioni mediche, allergie gravi o emergenze: in caso di emergenza, contatta immediatamente i servizi di soccorso o un professionista sanitario.</p>
 <h2 id="s4">4. ACCOUNT UTENTE</h2>
-<p>Per utilizzare Sbirù, incluse le funzioni di base come la scansione e la ricerca dei prodotti, è necessario creare un account (email, nome, cognome, password): non è possibile utilizzare l&#x27;App senza registrarsi. L&#x27;account di base è e resta gratuito; alcune funzioni aggiuntive richiedono l&#x27;abbonamento facoltativo Sbirù+ descritto alla sezione 5 (es. profilo fitness, profilo animale, preferenze sui nutrienti da monitorare).</p>
+<p>Per utilizzare Sbirù, incluse le funzioni di base come la scansione e la ricerca dei prodotti, è necessario creare un account (email, nome, cognome, password): non è possibile utilizzare l'App senza registrarsi. L'account di base è e resta gratuito; alcune funzioni aggiuntive richiedono l'abbonamento facoltativo Sbirù+ descritto alla sezione 5 (es. profilo fitness, profilo animale, preferenze sui nutrienti da monitorare).</p>
 <p>Sei responsabile di:</p>
 <ul><li>fornire informazioni veritiere al momento della registrazione;</li><li>mantenere riservate le tue credenziali di accesso;</li><li>ogni attività svolta tramite il tuo account.</li></ul>
-<p>Puoi richiedere la cancellazione del tuo account in qualsiasi momento dalle impostazioni dell&#x27;App o scrivendo a <a href="mailto:sbiru2026@yahoo.com">sbiru2026@yahoo.com</a>. Ci riserviamo il diritto di sospendere o cancellare account che violino i presenti Termini, che risultino inattivi per periodi prolungati o che mostrino segnali di uso fraudolento o abusivo del Servizio.</p>
-<h2 id="s5">5. ABBONAMENTO SBIRÙ+ E PERIODO DI PROVA</h2>
-<p>Sbirù offre alcune funzioni aggiuntive (&quot;Sbirù+&quot;), come le preferenze personalizzate sui nutrienti da monitorare, accessibili tramite un periodo di prova gratuito e/o giorni bonus ottenuti contribuendo alla banca dati prodotti (vedi sezione 6). L&#x27;accesso a Sbirù+ non richiede il pagamento di somme di denaro all&#x27;interno dell&#x27;App: al termine del periodo di prova o dei giorni bonus, le funzioni premium tornano non disponibili finché non si ottengono nuovi giorni contribuendo alla banca dati.</p>
+<p>Puoi richiedere la cancellazione del tuo account in qualsiasi momento dalle impostazioni dell'App o scrivendo a <a href="mailto:sbiru2026@yahoo.com">sbiru2026@yahoo.com</a>. Ci riserviamo il diritto di sospendere o cancellare account che violino i presenti Termini, che risultino inattivi per periodi prolungati o che mostrino segnali di uso fraudolento o abusivo del Servizio.</p>
+<h2 id="s5">5. ABBONAMENTO SBIRÙ+, PREZZO E RINNOVO</h2>
+<p>Sbirù offre alcune funzioni aggiuntive ("Sbirù+"), come i profili fitness e animale personalizzati e le preferenze sui nutrienti da monitorare (vedi sezione 2). Puoi ottenere Sbirù+ in due modi, anche combinati nel tempo:</p>
+<ul><li>gratuitamente, tramite un periodo di prova e/o giorni bonus ottenuti contribuendo alla banca dati prodotti (vedi sezione 6): al termine del periodo di prova o dei giorni bonus, le funzioni premium tornano non disponibili finché non ne ottieni di nuovi;</li><li>con un abbonamento annuale a pagamento al prezzo di 11,99 € (undici euro e novantanove centesimi) all'anno, IVA inclusa dove applicabile.</li></ul>
+<h3>5.1 Rinnovo automatico e disdetta</h3>
+<p>Salvo disdetta, l'abbonamento a pagamento si rinnova automaticamente alla scadenza per un ulteriore anno, allo stesso prezzo in vigore al momento del rinnovo. Ti informeremo del rinnovo imminente con un preavviso ragionevole tramite l'App o via email, quando possibile. Puoi disdire il rinnovo automatico in qualsiasi momento prima della data di scadenza, dalle impostazioni dell'App o scrivendo a <a href="mailto:sbiru2026@yahoo.com">sbiru2026@yahoo.com</a>; la disdetta ha effetto dal rinnovo successivo e non comporta il rimborso automatico del periodo già pagato, fatto salvo quanto previsto alla sezione 5.2. Il pagamento sarà gestito da un fornitore esterno di servizi di pagamento (indicato in App al momento dell'acquisto): non riceviamo né conserviamo i dati della tua carta o del tuo metodo di pagamento, trattati direttamente da tale fornitore (vedi anche l'Informativa sulla Privacy, sezioni 3.2 e 5).</p>
+<h3>5.2 Diritto di recesso</h3>
+<p>Se acquisti l'abbonamento Sbirù+ in qualità di consumatore residente nell'Unione Europea, hai diritto di recedere dall'acquisto entro 14 giorni, senza doverne indicare il motivo, ai sensi degli artt. 52 e seguenti del Codice del Consumo (D.Lgs. 206/2005). Puoi esercitare il recesso scrivendo a <a href="mailto:sbiru2026@yahoo.com">sbiru2026@yahoo.com</a> entro tale termine, indicando l'account con cui hai effettuato l'acquisto.</p>
+<p>Poiché Sbirù+ è un contenuto/servizio digitale reso disponibile immediatamente dopo l'acquisto, al momento del pagamento ti verrà chiesto di prestare consenso espresso alla fornitura immediata del servizio; prestando tale consenso prendi atto che, una volta iniziata l'erogazione del servizio, perdi il diritto di recesso ai sensi dell'art. 59, comma 1, lett. o) del Codice del Consumo.</p>
+<h3>5.3 Garanzia legale di conformità</h3>
+<p>Se acquisti l'abbonamento in qualità di consumatore, resta fermo quanto previsto dagli artt. 128-135 del Codice del Consumo in materia di garanzia legale di conformità per i contenuti e servizi digitali. Se ritieni che Sbirù+ non sia conforme a quanto pattuito, scrivici a <a href="mailto:sbiru2026@yahoo.com">sbiru2026@yahoo.com</a>: valuteremo la tua segnalazione e, ove fondata, provvederemo al ripristino della conformità o, se non possibile, alle misure previste dalla legge applicabile.</p>
 <h2 id="s6">6. CONTENUTI E CONTRIBUTI DELLA COMMUNITY</h2>
-<p>Se scegli di contribuire alla banca dati caricando foto di prodotti, etichette o testo di ingredienti (&quot;Contributi&quot;), dichiari che:</p>
-<ul><li>il contenuto caricato è veritiero, accurato e relativo esclusivamente al prodotto che intendi segnalare;</li><li>non caricherai immagini o testi che violino diritti di terzi (es. copyright di terzi, dati personali di altre persone), contenuti offensivi, ingannevoli o non pertinenti;</li><li>concedi a Sbirù una licenza non esclusiva, gratuita, mondiale e irrevocabile a utilizzare, riprodurre, adattare, pubblicare e mostrare tali Contributi all&#x27;interno del Servizio e della banca dati prodotti, anche dopo l&#x27;eventuale cancellazione del tuo account, nella misura in cui i Contributi restano di utilità per la community.</li></ul>
-<p>Tutti i Contributi sono soggetti a revisione (&quot;moderazione&quot;) da parte del nostro team prima di essere pubblicati nel database condiviso e possono essere modificati, rifiutati o rimossi a nostra discrezione, anche senza preavviso, ad esempio se risultano inesatti, duplicati o inappropriati.</p>
-<p>Il numero di Contributi approvati determina un livello/badge pubblico e può comparire in una classifica visibile ad altri utenti, come descritto nell&#x27;Informativa sulla Privacy.</p>
+<p>Se scegli di contribuire alla banca dati caricando foto di prodotti, etichette o testo di ingredienti ("Contributi"), dichiari che:</p>
+<ul><li>il contenuto caricato è veritiero, accurato e relativo esclusivamente al prodotto che intendi segnalare;</li><li>non caricherai immagini o testi che violino diritti di terzi (es. copyright di terzi, dati personali di altre persone), contenuti offensivi, ingannevoli o non pertinenti;</li><li>concedi a Sbirù una licenza non esclusiva, gratuita, mondiale e irrevocabile a utilizzare, riprodurre, adattare, pubblicare e mostrare tali Contributi all'interno del Servizio e della banca dati prodotti, anche dopo l'eventuale cancellazione del tuo account, nella misura in cui i Contributi restano di utilità per la community.</li></ul>
+<p>Tutti i Contributi sono soggetti a revisione ("moderazione") da parte del nostro team prima di essere pubblicati nel database condiviso e possono essere modificati, rifiutati o rimossi a nostra discrezione, anche senza preavviso, ad esempio se risultano inesatti, duplicati o inappropriati.</p>
+<p>Il numero di Contributi approvati determina un livello/badge pubblico e può comparire in una classifica visibile ad altri utenti, come descritto nell'Informativa sulla Privacy.</p>
 <h2 id="s7">7. LINK DI AFFILIAZIONE E MONETIZZAZIONE</h2>
-<p>Sbirù può suggerire prodotti alternativi con link che partecipano a programmi di affiliazione (ad esempio il Programma Affiliazione Amazon). Se acquisti un prodotto tramite questi link, potremmo ricevere una commissione dal rivenditore, senza alcun costo aggiuntivo per te. Non controlliamo né siamo responsabili della disponibilità, dei prezzi, della qualità o delle politiche di vendita dei rivenditori terzi: l&#x27;acquisto avviene direttamente tra te e il rivenditore, secondo i loro termini e condizioni.</p>
+<p>Sbirù può suggerire prodotti alternativi con link che partecipano a programmi di affiliazione (ad esempio il Programma Affiliazione Amazon). Se acquisti un prodotto tramite questi link, potremmo ricevere una commissione dal rivenditore, senza alcun costo aggiuntivo per te. Non controlliamo né siamo responsabili della disponibilità, dei prezzi, della qualità o delle politiche di vendita dei rivenditori terzi: l'acquisto avviene direttamente tra te e il rivenditore, secondo i loro termini e condizioni.</p>
+<p>Il punteggio di salute e l'ordine con cui i prodotti vengono mostrati o suggeriti sono calcolati esclusivamente sulla base di ingredienti, valori nutrizionali e dati di sicurezza disponibili: nessun rivenditore o marchio può pagare per ottenere un punteggio più alto o una posizione di rilievo, e le eventuali commissioni di affiliazione che riceviamo non influenzano in alcun modo il punteggio assegnato a un prodotto.</p>
 <h2 id="s8">8. PROPRIETÀ INTELLETTUALE</h2>
-<p>Il nome &quot;Sbirù&quot;, il logo, l&#x27;interfaccia, il codice sorgente proprietario, i testi, la grafica e gli algoritmi di calcolo del punteggio di salute (salvo i Contributi degli utenti e i dati provenienti da banche dati pubbliche terze) sono di proprietà di Kevin o concessi in licenza a quest&#x27;ultimo, e sono protetti dalle leggi applicabili in materia di proprietà intellettuale. Non è consentito copiare, modificare, distribuire, decompilare o creare opere derivate dal Servizio senza autorizzazione scritta, salvo quanto espressamente consentito da una licenza open source separata eventualmente applicata al codice sorgente pubblicato su repository pubblici.</p>
-<p>I dati sui prodotti provenienti da Open Food Facts, Open Beauty Facts, Open Pet Food Facts, USDA FoodData Central e altre banche dati pubbliche restano soggetti alle rispettive licenze d&#x27;uso.</p>
+<p>Il nome "Sbirù", il logo, l'interfaccia, il codice sorgente proprietario, i testi, la grafica e gli algoritmi di calcolo del punteggio di salute (salvo i Contributi degli utenti e i dati provenienti da banche dati pubbliche terze) sono di proprietà di Kevin o concessi in licenza a quest'ultimo, e sono protetti dalle leggi applicabili in materia di proprietà intellettuale. Non è consentito copiare, modificare, distribuire, decompilare o creare opere derivate dal Servizio senza autorizzazione scritta, salvo quanto espressamente consentito da una licenza open source separata eventualmente applicata al codice sorgente pubblicato su repository pubblici.</p>
+<p>I dati sui prodotti provenienti da Open Food Facts, Open Beauty Facts, Open Pet Food Facts, USDA FoodData Central e altre banche dati pubbliche restano soggetti alle rispettive licenze d'uso.</p>
 <h2 id="s9">9. USO ACCETTABILE</h2>
 <p>Utilizzando Sbirù ti impegni a non:</p>
-<ul><li>utilizzare il Servizio per scopi illeciti o fraudolenti;</li><li>tentare di accedere senza autorizzazione a sistemi, account o dati di altri utenti;</li><li>caricare virus, malware o codice dannoso;</li><li>effettuare scraping, estrazione massiva di dati o utilizzo automatizzato del Servizio non autorizzato, in modo da comprometterne la stabilità o aggirare i limiti di richiesta (rate limiting);</li><li>caricare Contributi falsi, ingannevoli, offensivi o lesivi di diritti di terzi;</li><li>utilizzare il Servizio in un modo che possa danneggiare, disabilitare, sovraccaricare o compromettere l&#x27;infrastruttura di Sbirù o l&#x27;esperienza di altri utenti.</li></ul>
-<p>Ci riserviamo il diritto di sospendere o terminare l&#x27;accesso al Servizio, in tutto o in parte, per chi violi questi Termini.</p>
+<ul><li>utilizzare il Servizio per scopi illeciti o fraudolenti;</li><li>tentare di accedere senza autorizzazione a sistemi, account o dati di altri utenti;</li><li>caricare virus, malware o codice dannoso;</li><li>effettuare scraping, estrazione massiva di dati o utilizzo automatizzato del Servizio non autorizzato, in modo da comprometterne la stabilità o aggirare i limiti di richiesta (rate limiting);</li><li>caricare Contributi falsi, ingannevoli, offensivi o lesivi di diritti di terzi;</li><li>utilizzare il Servizio in un modo che possa danneggiare, disabilitare, sovraccaricare o compromettere l'infrastruttura di Sbirù o l'esperienza di altri utenti.</li></ul>
+<p>Ci riserviamo il diritto di sospendere o terminare l'accesso al Servizio, in tutto o in parte, per chi violi questi Termini.</p>
 <h2 id="s10">10. ACCURATEZZA DEI DATI E LIMITAZIONE DI RESPONSABILITÀ</h2>
-<p>Il Servizio è fornito &quot;così com&#x27;è&quot; (&quot;as is&quot;) e &quot;nella misura in cui disponibile&quot; (&quot;as available&quot;), senza garanzie di alcun tipo, esplicite o implicite, incluse, a titolo esemplificativo, garanzie di accuratezza, completezza, idoneità per uno scopo particolare o assenza di errori.</p><p>In particolare, la tecnologia di riconoscimento automatico degli ingredienti (scansione, OCR e analisi tramite intelligenza artificiale) può commettere errori, omissioni o imprecisioni nell’estrazione e nell’interpretazione degli ingredienti presenti sull’etichetta del prodotto. Ti invitiamo a verificare sempre e comunque gli ingredienti direttamente sulla confezione o etichetta originale del prodotto prima di ogni decisione di acquisto, consumo o somministrazione, in particolare in presenza di allergie, intolleranze o patologie proprie o del tuo animale domestico.</p>
+<p>Il Servizio è fornito "così com'è" ("as is") e "nella misura in cui disponibile" ("as available"), senza garanzie di alcun tipo, esplicite o implicite, incluse, a titolo esemplificativo, garanzie di accuratezza, completezza, idoneità per uno scopo particolare o assenza di errori.</p>
+<p>In particolare, la tecnologia di riconoscimento automatico degli ingredienti (scansione, OCR e analisi tramite intelligenza artificiale) può commettere errori, omissioni o imprecisioni nell'estrazione e nell'interpretazione degli ingredienti presenti sull'etichetta del prodotto. Ti invitiamo a verificare sempre e comunque gli ingredienti direttamente sulla confezione o etichetta originale del prodotto prima di ogni decisione di acquisto, consumo o somministrazione, in particolare in presenza di allergie, intolleranze o patologie proprie o del tuo animale domestico.</p>
 <p>Nei limiti massimi consentiti dalla legge applicabile:</p>
 <ul><li>non garantiamo che i punteggi di salute, le informazioni nutrizionali, le segnalazioni di richiamo o i suggerimenti di prodotti alternativi siano sempre accurati, completi o aggiornati, poiché derivano in parte da banche dati di terze parti che non controlliamo;</li><li>non siamo responsabili per decisioni prese sulla base delle informazioni fornite dal Servizio, incluse conseguenze relative alla salute tua o del tuo animale domestico;</li><li>non siamo responsabili per interruzioni, malfunzionamenti, perdita di dati o indisponibilità del Servizio, salvo dolo o colpa grave ove non derogabile dalla legge applicabile;</li><li>non siamo responsabili per contenuti, prodotti o servizi di terze parti collegati o suggeriti tramite il Servizio (inclusi rivenditori come Amazon).</li></ul>
 <p>Nessuna disposizione dei presenti Termini intende escludere o limitare responsabilità che non possono essere escluse o limitate ai sensi della legge applicabile (ad esempio in caso di dolo, colpa grave, o danni alla persona derivanti da nostra negligenza, ove previsto).</p>
 <h2 id="s11">11. SOSPENSIONE E CESSAZIONE</h2>
-<p>Puoi smettere di utilizzare Sbirù e cancellare il tuo account in qualsiasi momento. Possiamo sospendere o terminare il tuo accesso al Servizio, con o senza preavviso, in caso di violazione dei presenti Termini, di uso fraudolento o abusivo, o per esigenze tecniche o legali. In caso di cessazione dell&#x27;account, si applicano le previsioni sulla conservazione dei dati indicate nell&#x27;Informativa sulla Privacy.</p>
+<p>Puoi smettere di utilizzare Sbirù e cancellare il tuo account in qualsiasi momento. Possiamo sospendere o terminare il tuo accesso al Servizio, con o senza preavviso, in caso di violazione dei presenti Termini, di uso fraudolento o abusivo, o per esigenze tecniche o legali. In caso di cessazione dell'account, si applicano le previsioni sulla conservazione dei dati indicate nell'Informativa sulla Privacy.</p>
 <h2 id="s12">12. MODIFICHE AL SERVIZIO E AI TERMINI</h2>
-<p>Possiamo modificare questi Termini in qualsiasi momento, ad esempio per riflettere nuove funzionalità, requisiti legali o modifiche al modello di abbonamento. La versione aggiornata sarà pubblicata con indicazione della data di &quot;ultimo aggiornamento&quot; in cima al documento. L&#x27;uso continuato del Servizio dopo la pubblicazione delle modifiche costituisce accettazione dei nuovi Termini; in caso di modifiche sostanziali, cercheremo di darne avviso tramite l&#x27;App o via email, quando possibile.</p>
+<p>Possiamo modificare questi Termini in qualsiasi momento, ad esempio per riflettere nuove funzionalità, requisiti legali o modifiche al modello di abbonamento. La versione aggiornata sarà pubblicata con indicazione della data di "ultimo aggiornamento" in cima al documento. L'uso continuato del Servizio dopo la pubblicazione delle modifiche costituisce accettazione dei nuovi Termini; in caso di modifiche sostanziali, cercheremo di darne avviso tramite l'App o via email, quando possibile.</p>
 <h2 id="s13">13. LEGGE APPLICABILE E FORO COMPETENTE</h2>
-<p>I presenti Termini sono regolati dalla legge italiana, fatte salve le eventuali disposizioni inderogabili a tutela dei consumatori previste dalla legge del Paese di residenza dell&#x27;utente. Per gli utenti che rivestono la qualifica di consumatori resta fermo il foro del consumatore previsto dalla normativa inderogabile applicabile (di norma il luogo di residenza o domicilio del consumatore); per ogni altra controversia è competente il foro previsto dalla legge italiana.</p>
+<p>I presenti Termini sono regolati dalla legge italiana, fatte salve le eventuali disposizioni inderogabili a tutela dei consumatori previste dalla legge del Paese di residenza dell'utente. Per gli utenti che rivestono la qualifica di consumatori resta fermo il foro del consumatore previsto dalla normativa inderogabile applicabile (di norma il luogo di residenza o domicilio del consumatore); per ogni altra controversia è competente il foro previsto dalla legge italiana.</p>
+<p>Se sei un consumatore residente nell'Unione Europea, puoi anche ricorrere alla piattaforma europea di risoluzione delle controversie online, disponibile all'indirizzo <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>, oltre che rivolgerti direttamente a noi scrivendo a <a href="mailto:sbiru2026@yahoo.com">sbiru2026@yahoo.com</a>.</p>
 <h2 id="s14">14. CONTATTI</h2>
 <p>Per domande su questi Termini scrivi a: <a href="mailto:sbiru2026@yahoo.com">sbiru2026@yahoo.com</a></p>
 <p>Kevin — Sbirù</p>
-  </div>
+</div>
 </main>
 <footer>Sbirù — sbiru2026@yahoo.com</footer>
 </body>

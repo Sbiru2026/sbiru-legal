@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sbirù – Scan the barcode, see how healthy it is</title>
+<meta name="description" content="Sbirù gives a 0–100 health score to food, cosmetics and pet food: just scan the barcode.">
+<link rel="icon" href="https://nutri-scan--kevin92bassi.replit.app/icons/apple-touch-icon.png">
+<link rel="alternate" hreflang="it" href="https://www.sbiru.eu/">
+<link rel="alternate" hreflang="en" href="https://www.sbiru.eu/index.en.html">
+<meta property="og:title" content="Sbirù – Scan the barcode, see how healthy it is">
+<meta property="og:description" content="Sbirù gives a 0–100 health score to food, cosmetics and pet food: just scan the barcode.">
+<meta property="og:image" content="https://nutri-scan--kevin92bassi.replit.app/icons/apple-touch-icon.png">
+<style>
+:root{--amber:#f2a900;--amber-d:#e08e00;--amber-l:#ffc23d;--bg:#f6f4ef;--ink:#20261f;--mute:#5d665b;--card:#fff;--line:#e6e2d8}
+@media (prefers-color-scheme:dark){:root{--bg:#171a16;--ink:#f1efe8;--mute:#a9b1a6;--card:#21261f;--line:#323830}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#ffc23d 0%,#f2a900 55%,#e08e00 100%);color:#2a1d00}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1040px;margin:0 auto;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.35rem;text-decoration:none}
+.logo img{width:34px;height:34px;border-radius:9px}
+nav{display:flex;gap:18px;align-items:center;font-size:.95rem;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:500}nav a:hover{text-decoration:underline}
+.lang{background:rgba(255,255,255,.45);border-radius:999px;padding:4px 12px;font-weight:600}
+.hero{padding:56px 20px 72px;max-width:1040px;margin:0 auto}
+h1{font-size:clamp(2rem,5.5vw,3.4rem);line-height:1.12;margin:0 0 18px;max-width:14em}
+.lead{font-size:1.15rem;max-width:36em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid #2a1d00}
+.btn.p{background:#2a1d00;color:#fff}.btn.s{background:transparent;color:#2a1d00}
+.btn:hover{transform:translateY(-1px)}
+section{padding:56px 0}
+h2{font-size:clamp(1.5rem,3.5vw,2rem);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:var(--mute)}
+.num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--amber);color:#2a1d00;font-weight:700;margin-bottom:12px}
+.alt{background:var(--card);border-block:1px solid var(--line)}
+.alt .card{background:var(--bg)}
+.score p{max-width:42em;color:var(--mute);font-size:1.05rem}
+.link{display:inline-block;margin-top:8px;font-weight:600;color:var(--amber-d)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}details p{margin:10px 0 0;color:var(--mute)}
+footer{padding:36px 20px 48px;text-align:center;color:var(--mute);font-size:.9rem}
+footer nav{justify-content:center;margin-bottom:14px}
+footer p{max-width:38em;margin:0 auto}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+<div class="bar">
+<a class="logo" href="index.en.html"><img src="https://nutri-scan--kevin92bassi.replit.app/icons/apple-touch-icon.png" alt="">Sbirù</a>
+<nav>
+<a href="#how">How it works</a><a href="#score">The score</a><a href="#faq">FAQ</a>
+<a class="lang" href="index.html" hreflang="it">Italiano</a>
+</nav>
+</div>
+<div class="hero">
+<h1>Scan. See how healthy it is.</h1>
+<p class="lead">Point your camera at a barcode and get a 0–100 score for food, cosmetics and pet food in a moment, with the reasons explained in plain words.</p>
+<div class="btns"><a class="btn p" href="https://play.google.com/store/apps/details?id=com.sbiru.app">Get it on Google Play</a><a class="btn s" href="https://nutri-scan--kevin92bassi.replit.app/">Use it in your browser</a></div>
+</div>
+</header>
+<main>
+<section id="how"><div class="wrap"><h2>How it works</h2><div class="grid"><div class="card"><span class="num">1</span><h3>Scan the barcode</h3><p>Open Sbirù and point the camera at the product, in the shop or at home.</p></div><div class="card"><span class="num">2</span><h3>Get the score</h3><p>A score from 0 to 100 and a clear rating: Excellent, Good, Mediocre or Poor.</p></div><div class="card"><span class="num">3</span><h3>See why</h3><p>Find out what raises or lowers the score: ingredients, additives, processing, nutrition.</p></div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Three categories, one glance</h2><div class="grid"><div class="card"><h3>Food</h3><p>Nutrition values, level of processing and additives. Honey has its own dedicated scoring that looks at origin, purity and processing.</p></div><div class="card"><h3>Cosmetics</h3><p>Every ingredient on the INCI list assessed one by one, so you know what goes on your skin.</p></div><div class="card"><h3>Pet food</h3><p>A score designed for dogs and cats, also based on your pet’s profile.</p></div></div></div></section>
+<section id="score" class="score"><div class="wrap"><h2>A transparent score</h2><p>It is not a random number: the score follows public criteria and open data, and every result shows the reasons behind it. When product information is missing, the app says so instead of guessing.</p><a class="link" href="https://nutri-scan--kevin92bassi.replit.app/punteggio.html">Read how we calculate the score →</a></div></section>
+<section id="faq" class="alt"><div class="wrap"><h2>Frequently asked questions</h2><details><summary>How much does it cost?</summary><p>Sbirù is free to use. There is also a Plus subscription with extra features, purchased through Google Play.</p></details><details><summary>Where does the product data come from?</summary><p>From open databases such as Open Food Facts and from information added by the community. If a product is missing, you can help us add it.</p></details><details><summary>What about alcoholic drinks?</summary><p>They are not scored: the app does not give a health score to alcohol.</p></details><details><summary>Does the score replace a doctor’s advice?</summary><p>No. Sbirù is an information tool and does not give medical or dietary advice.</p></details></div></section>
+</main>
+<footer>
+<nav><a href="termini.en.html">Terms</a><a href="privacy.en.html">Privacy</a><a href="mailto:sbiru2026@yahoo.com">Contact</a></nav>
+<p>Sbirù is an informational app. It does not replace the advice of a doctor or a nutritionist.</p>
+<p>© 2026 Sbirù</p>
+</footer>
+</body>
+</html>

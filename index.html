@@ -1,63 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Documenti legali — Sbirù</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sbirù – Scansiona il codice a barre, scopri quanto è sano</title>
+<meta name="description" content="Sbirù dà un voto da 0 a 100 ad alimenti, cosmetici e cibo per animali: basta scansionare il codice a barre.">
+<link rel="icon" href="https://nutri-scan--kevin92bassi.replit.app/icons/apple-touch-icon.png">
+<link rel="alternate" hreflang="it" href="https://www.sbiru.eu/">
+<link rel="alternate" hreflang="en" href="https://www.sbiru.eu/index.en.html">
+<meta property="og:title" content="Sbirù – Scansiona il codice a barre, scopri quanto è sano">
+<meta property="og:description" content="Sbirù dà un voto da 0 a 100 ad alimenti, cosmetici e cibo per animali: basta scansionare il codice a barre.">
+<meta property="og:image" content="https://nutri-scan--kevin92bassi.replit.app/icons/apple-touch-icon.png">
 <style>
-  :root {
-    --bg: #fbf7ee;
-    --card: #ffffff;
-    --ink: #2b2118;
-    --muted: #6b6153;
-    --accent-dark: #b97d0f;
-    --border: #ecdfc4;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  .card {
-    max-width: 420px;
-    width: 100%;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 36px;
-    text-align: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  }
-  h1 { font-size: 1.5rem; margin: 0 0 6px; }
-  p.sub { color: var(--muted); margin: 0 0 26px; font-size: 0.95rem; }
-  a.doc {
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(135deg, #f6b93b, #e8a324);
-    color: #3a2a06;
-    font-weight: 700;
-    padding: 14px;
-    border-radius: 10px;
-    margin-bottom: 14px;
-  }
-  a.doc:last-of-type { margin-bottom: 0; }
-  footer { margin-top: 24px; color: var(--muted); font-size: 0.8rem; }
+:root{--amber:#f2a900;--amber-d:#e08e00;--amber-l:#ffc23d;--bg:#f6f4ef;--ink:#20261f;--mute:#5d665b;--card:#fff;--line:#e6e2d8}
+@media (prefers-color-scheme:dark){:root{--bg:#171a16;--ink:#f1efe8;--mute:#a9b1a6;--card:#21261f;--line:#323830}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#ffc23d 0%,#f2a900 55%,#e08e00 100%);color:#2a1d00}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;max-width:1040px;margin:0 auto;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.35rem;text-decoration:none}
+.logo img{width:34px;height:34px;border-radius:9px}
+nav{display:flex;gap:18px;align-items:center;font-size:.95rem;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:500}nav a:hover{text-decoration:underline}
+.lang{background:rgba(255,255,255,.45);border-radius:999px;padding:4px 12px;font-weight:600}
+.hero{padding:56px 20px 72px;max-width:1040px;margin:0 auto}
+h1{font-size:clamp(2rem,5.5vw,3.4rem);line-height:1.12;margin:0 0 18px;max-width:14em}
+.lead{font-size:1.15rem;max-width:36em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid #2a1d00}
+.btn.p{background:#2a1d00;color:#fff}.btn.s{background:transparent;color:#2a1d00}
+.btn:hover{transform:translateY(-1px)}
+section{padding:56px 0}
+h2{font-size:clamp(1.5rem,3.5vw,2rem);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:var(--mute)}
+.num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--amber);color:#2a1d00;font-weight:700;margin-bottom:12px}
+.alt{background:var(--card);border-block:1px solid var(--line)}
+.alt .card{background:var(--bg)}
+.score p{max-width:42em;color:var(--mute);font-size:1.05rem}
+.link{display:inline-block;margin-top:8px;font-weight:600;color:var(--amber-d)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}details p{margin:10px 0 0;color:var(--mute)}
+footer{padding:36px 20px 48px;text-align:center;color:var(--mute);font-size:.9rem}
+footer nav{justify-content:center;margin-bottom:14px}
+footer p{max-width:38em;margin:0 auto}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
 </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Sbirù</h1>
-    <p class="sub">Documenti legali dell'applicazione</p>
-    <a class="doc" href="privacy.html">Privacy Policy</a>
-    <a class="doc" href="termini.html">Termini di Utilizzo</a>
-    <footer>sbiru2026@yahoo.com</footer>
-  </div>
+<header>
+<div class="bar">
+<a class="logo" href="index.html"><img src="https://nutri-scan--kevin92bassi.replit.app/icons/apple-touch-icon.png" alt="">Sbirù</a>
+<nav>
+<a href="#how">Come funziona</a><a href="#score">Il punteggio</a><a href="#faq">Domande</a>
+<a class="lang" href="index.en.html" hreflang="en">English</a>
+</nav>
+</div>
+<div class="hero">
+<h1>Scansiona. Scopri quanto è sano.</h1>
+<p class="lead">Con Sbirù basta inquadrare il codice a barre: in un attimo ricevi un voto da 0 a 100 per alimenti, cosmetici e cibo per animali, con le ragioni spiegate in modo semplice.</p>
+<div class="btns"><a class="btn p" href="https://play.google.com/store/apps/details?id=com.sbiru.app">Scarica su Google Play</a><a class="btn s" href="https://nutri-scan--kevin92bassi.replit.app/">Usa subito dal browser</a></div>
+</div>
+</header>
+<main>
+<section id="how"><div class="wrap"><h2>Come funziona</h2><div class="grid"><div class="card"><span class="num">1</span><h3>Inquadra il codice a barre</h3><p>Apri Sbirù e punta la fotocamera sul prodotto, al supermercato o a casa.</p></div><div class="card"><span class="num">2</span><h3>Ricevi il voto</h3><p>Un punteggio da 0 a 100 e un giudizio chiaro: Eccellente, Buono, Mediocre o Scadente.</p></div><div class="card"><span class="num">3</span><h3>Capisci il perché</h3><p>Vedi cosa alza o abbassa il voto: ingredienti, additivi, lavorazione, valori nutrizionali.</p></div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Tre categorie, un solo colpo d’occhio</h2><div class="grid"><div class="card"><h3>Alimenti</h3><p>Valori nutrizionali, grado di lavorazione e additivi. Per il miele c’è un calcolo dedicato che guarda origine, purezza e lavorazione.</p></div><div class="card"><h3>Cosmetici</h3><p>Gli ingredienti della lista INCI valutati uno per uno, per capire cosa metti sulla pelle.</p></div><div class="card"><h3>Cibo per animali</h3><p>Voto pensato per cani e gatti, anche in base al profilo del tuo animale.</p></div></div></div></section>
+<section id="score" class="score"><div class="wrap"><h2>Un voto trasparente</h2><p>Non è un numero a caso: il punteggio si basa su criteri pubblici e dati aperti, e ogni voto mostra i motivi che lo hanno prodotto. Se mancano informazioni sul prodotto, l’app lo dice invece di inventarle.</p><a class="link" href="https://nutri-scan--kevin92bassi.replit.app/punteggio.html">Leggi come calcoliamo il punteggio →</a></div></section>
+<section id="faq" class="alt"><div class="wrap"><h2>Domande frequenti</h2><details><summary>Quanto costa?</summary><p>Puoi usare Sbirù gratis. Esiste anche un abbonamento Plus con funzioni in più, acquistabile tramite Google Play.</p></details><details><summary>Da dove arrivano i dati dei prodotti?</summary><p>Da database aperti, come Open Food Facts, e dalle informazioni inserite dalla community. Se un prodotto non c’è, puoi aiutarci a aggiungerlo.</p></details><details><summary>Le bevande alcoliche?</summary><p>Non vengono valutate: l’app non assegna un voto di salute agli alcolici.</p></details><details><summary>Il voto sostituisce il parere di un medico?</summary><p>No. Sbirù è uno strumento informativo e non dà consigli medici o dietetici.</p></details></div></section>
+</main>
+<footer>
+<nav><a href="termini.html">Termini</a><a href="privacy.html">Privacy</a><a href="mailto:sbiru2026@yahoo.com">Contatti</a></nav>
+<p>Sbirù è un’app informativa. Non sostituisce il parere di un medico o di un nutrizionista.</p>
+<p>© 2026 Sbirù</p>
+</footer>
 </body>
 </html>
